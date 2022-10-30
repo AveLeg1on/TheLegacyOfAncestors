@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="neon-lights-background-theme_52683-44625.jpg" />
+    <None Remove="neonlights.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="neonlights.jpg" />
+  </ItemGroup>
+
+</Project>
