@@ -22,16 +22,22 @@ namespace TheLegacyOfAncestors
         private void Button_Click(object sender, RoutedEventArgs e)
         { RightAngled entered = new RightAngled();
             double.TryParse(one.Text, out double value);
-            entered.GetCatit1(value);
+           entered.One=value;
             double.TryParse(two.Text, out double value2);
-            entered.GetCatit2(value2);
+            entered.Two = value2;
 
             //entered.HypotenuseCalculation()
-            Jumbo.Text=$"Гипотинуза:{entered.HypotenuseCalculation()}"/*,Площадь:{entered.Two}*/;
+            Jumbo.Text=$"Гипотинуза: {entered.HypotenuseCalculation()}";
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            RightAngled entered = new RightAngled();
+            double.TryParse(one.Text, out double value);
+            entered.One = value;
+            double.TryParse(two.Text, out double value2);
+            entered.Two = value2;
+            Jumbo.Text = $"Площадь: {entered.Square()}";
 
         }
 

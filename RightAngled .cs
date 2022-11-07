@@ -8,47 +8,55 @@ namespace TheLegacyOfAncestors
 {
     internal class RightAngled : Pair
     {
-        private double catit1;
-        private double catit2;
-        Pair HypeAndS = new Pair();
-        public void GetCatit1(double w)
+       private new double one;
+        private new double two;
+        public new  double One
         {
-            One = w;
-            catit1 =One;
-            
+            get
+            {
+                return one;
+            }
+            set
+            {
+                one = value;
+            }
+
         }
-        public void GetCatit2(double w)
+        public new double Two
         {
-            Two = w;
-          catit2=Two;
+            get
+            {
+                return two;
+            }
+            set
+            {
+                two = value;
+            }
+
         }
-
-        //public double Catit1 { get { return catit1; } set { catit1 = value; } }
-        //public double Catit2 { get { return catit2; } set { catit2 = value; } }
-
 
         /// <summary>
         /// Считает значение гипотинузы
         /// </summary>
-        /// <returns name="HypeAndS.One"></returns>
+        /// <returns name="one"></returns>
         public double HypotenuseCalculation()
         {
         
-           catit1 = Math.Pow(catit1, 2) * Math.Pow(catit2, 2);
+          one = Math.Pow(one, 2) + Math.Pow(two, 2);
 
-            return Math.Sqrt(catit1);
+            return Math.Sqrt(one);
         }
         /// <summary>
         /// Считает площадь треугольника
         /// </summary>
-        /// <returns name="HypeAndS.Two"></returns>
+        /// <returns name="two"></returns>
         public double Square()
         {
-            catit1 = (catit1 * catit2) / 2;
-            return catit1;
+            two = (one *two) / 2;
+            return two;
         }
-       
-            
+
+
 
     }
 }

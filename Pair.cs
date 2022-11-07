@@ -2,9 +2,9 @@
 {
     internal class Pair
     {
-        protected double  one;
-      protected double two;
-        public double One 
+        protected int  one;
+      protected int two;
+        public int One 
         {
             get
             {
@@ -16,7 +16,7 @@
             }
 
          }
-        public double Two 
+        public int Two 
         { 
             get
             {
